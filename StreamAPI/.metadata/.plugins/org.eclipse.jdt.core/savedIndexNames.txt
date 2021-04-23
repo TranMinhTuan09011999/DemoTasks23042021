@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\PC\Documents\ITJS-TASK\Task230421\StreamAPI\.metadata\.plugins\org.eclipse.jdt.core
+3423253026.index
+2840887606.index

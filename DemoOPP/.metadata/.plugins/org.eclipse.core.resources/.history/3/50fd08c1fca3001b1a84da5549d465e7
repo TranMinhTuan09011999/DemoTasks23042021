@@ -1,0 +1,7 @@
+package com.itsj.encapsulation;
+
+public class DemoEncapsulation {
+	public static void main(String[] args) {
+		
+	}
+}

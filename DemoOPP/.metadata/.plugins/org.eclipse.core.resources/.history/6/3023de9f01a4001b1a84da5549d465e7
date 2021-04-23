@@ -1,0 +1,16 @@
+package com.itsj.polymorphism;
+
+public class Math {
+	protected int a;
+	protected int b;
+	
+	public Math(int a, int b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+	
+	public int add(int a, int b) {
+		
+	}
+}

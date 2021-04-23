@@ -1,0 +1,12 @@
+package com.itsj.polymorphism;
+
+public class Ford extends Car{
+	private double price;
+	private double tax;
+	public Ford(String name) {
+		super(name);
+		
+	}
+	
+	
+}

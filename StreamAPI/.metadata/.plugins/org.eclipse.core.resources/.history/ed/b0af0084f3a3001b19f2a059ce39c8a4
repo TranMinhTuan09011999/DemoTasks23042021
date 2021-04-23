@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DemoStreamAPI {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		ArrayList<Student> list = new ArrayList<Student>();
+		System.out.println("------- Enter list of students --------");
+		/*int i = 1;
+		while(true) {
+			Student st = new Student();
+			System.out.println("Student " + i + ": ");
+			System.out.print("\tEnter id: ");
+			st.setId(sc.nextLine());
+			System.out.print("\tEnter name: ");
+			st.setName(sc.nextLine());
+			while(true)
+			{
+				System.out.print("\tEnter gender (male/female): ");
+				st.setGender(sc.nextLine());
+				if(st.getGender().equalsIgnoreCase("male") == true || st.getGender().equalsIgnoreCase("female") == true) {
+					break;
+				}else {
+					System.out.println("\tPlease, enter male or female");
+				}
+			}		
+			System.out.print("\tEnter age: ");
+			st.setAge(sc.nextInt());
+			list.add(st);
+			System.out.print("Enter y to continue enter student: ");
+			sc.nextLine();
+			String con = sc.nextLine();
+			if(con.equalsIgnoreCase("y") == true) {
+				continue;
+			}else {
+				break;
+			}		
+		}*/
+		Student s1=new Student(1, "Tuan", "Male", 22);
+        Student s2=new Student(2, "Tan", "Male", 14);
+        Student s3=new Student(3, "Hop", "Female", 13);
+        Student s4=new Student(4, "Thu", "Female", 24);
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        list.add(s4);
+		
+		/*Get students with gender is 'male'*/
+		System.out.println("Get students with gender is 'male': ");
+		list.stream().filter(item -> item.getGender().equals("male") == true).forEach(System.out::println);
+		/*Count student with age > 20*/
+		long count = list.stream().filter(age -> age.getAge() > 20).count();
+		System.out.println("Count student with age > 20: " + count);
+	}
+}

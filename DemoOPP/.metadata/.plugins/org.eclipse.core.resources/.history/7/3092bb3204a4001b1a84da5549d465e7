@@ -1,0 +1,7 @@
+package com.itsj.polymorphism;
+
+public class DemoPolymorphism {
+	public static void main(String[] args) {
+		
+	}
+}

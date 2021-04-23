@@ -1,0 +1,11 @@
+interface Action{
+	public String say();
+}
+public class DemoLambdaExpression {
+	public static void main(String[] args) {
+		Action a = () -> {
+			return "I have nothing to say";
+		};
+		
+	}
+}

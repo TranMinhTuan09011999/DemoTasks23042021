@@ -1,0 +1,8 @@
+interface Action{
+	public String say(String word);
+}
+public class DemoLambdaExpression {
+	public static void main(String[] args) {
+		
+	}
+}

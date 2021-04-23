@@ -1,0 +1,17 @@
+interface Action{
+	public String say();
+}
+interface Action1{
+	public String say(String word);
+}
+public class DemoLambdaExpression {
+	public static void main(String[] args) {
+		/*Lambda Expression don't have parameter*/
+		Action a = () -> {
+			return "I have nothing to say";
+		};
+		System.out.println(a.say());
+		/*Lambda Expression have 1 parameter*/
+		
+	}
+}
